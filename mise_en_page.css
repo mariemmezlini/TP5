@@ -1,0 +1,108 @@
+body{
+    background-color:#EEF2FF;
+    background-image:url(../images/motif.png);
+    background-repeat:repeat-x repeat-x;
+      background-attachment: fixed;
+}
+.banniere{
+    background-color: #1B2A9E;
+    background-image:url(../images/banniere.png);
+    background-repeat: no-repeat;
+    background-position: 90% 50% ;
+    background-size:270px 180px;
+}
+.entete{
+      display:flex;
+      gap: 24px;
+
+
+}
+.titre-bloc{
+    flex:1 ;
+
+
+}
+.menu{
+      display:flex;
+      gap: 24px;
+}
+.infos { display: flex; flex-direction: column; }
+  .niveau { align-self: flex-start; }
+
+    .pied-haut { display: flex; justify-content: space-between; align-items: center; } /* Marque */
+     .marque { display: flex; align-items: center; gap: 14px; } /* Liste des liens du pied */ 
+     .liens-pied { display: flex; gap: 22px; }
+     .grille-ateliers {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+.vedette {
+    grid-column: span 2;
+    grid-row: span 2;
+}
+
+
+.video {
+    grid-area: video;
+}
+
+.audio {
+    grid-area: audio;
+}
+
+.plan {
+    grid-area: plan;
+}
+
+.planning {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+}
+
+
+.planning caption {
+    caption-side: bottom;
+    padding-top: 10px;
+    font-style: italic;
+    color: #5B6BA8;
+}
+
+
+.planning th,
+
+.planning td {
+    padding: 12px 16px;
+    border-bottom: 1px solid #DCE3FB;
+    text-align: left;
+}
+
+
+.planning th {
+    color: white;
+    background-color: #1B2A9E;
+}
+
+.planning tbody tr:nth-child(even) {
+    background-color: #F4F7FF;
+}
+
+
+.planning tbody tr:hover {
+    background-color: #E3E8FF;
+}
+
+
+.planning tr > :last-child {
+    text-align: center;
+}
+
+
+.planning tfoot td {
+    font-weight: bold;
+    color: #14206B;
+    background-color: #E9EBFF;
+}
+```

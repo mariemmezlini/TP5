@@ -1,0 +1,234 @@
+/* =====================================================================
+   base.css – FICHIER FOURNI (ne pas modifier)
+
+   Ce fichier reprend les notions du TP4 : polices, couleurs, marges,
+   bordures. Il contient aussi quelques effets vus plus tard (coins
+   arrondis, ombres).
+
+   Les FONDS, la disposition FLEXBOX et GRID et la mise en forme du
+   TABLEAU sont écrits PAR VOUS dans mise-en-page.css.
+
+   Ce fichier est lié AVANT mise-en-page.css : en cas de conflit, ce
+   sont donc vos règles qui s'appliquent.
+   ===================================================================== */
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: "Nunito", "Segoe UI", Arial, sans-serif;
+  color: #25306B;
+}
+
+h1, h2, h3 { font-weight: 800; }
+
+a { color: #2563EB; }
+
+
+/* ---------- En-tête ------------------------------------------------------ */
+.entete {
+  padding: 18px 40px;
+  color: white;
+  background-color: #1B2A9E;
+}
+
+.logo { display: block; }
+
+.entete h1 {
+  margin: 0;
+  font-size: 30px;
+  text-shadow: 2px 2px 4px #0B1460;
+}
+
+.entete h1 span { color: #7DF9FF; }
+
+.devise {
+  margin: 4px 0 0 0;
+  font-style: italic;
+  letter-spacing: 1px;
+  color: #A9C8FF;
+}
+
+.menu {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.menu a {
+  display: block;
+  padding: 10px 18px;
+  border-radius: 22px;
+  font-weight: 700;
+  color: white;
+  text-decoration: none;
+}
+
+.menu a:hover        { background-color: rgba(255, 255, 255, 0.14); }
+.menu .bouton        { background-color: #2563EB; }
+.menu .bouton:hover  { background-color: #3B82F6; }
+
+
+/* ---------- Bannière ----------------------------------------------------- */
+.banniere {
+  padding: 46px 420px 46px 40px;
+  color: white;
+}
+
+.banniere h2 {
+  margin: 0 0 8px 0;
+  font-size: 30px;
+}
+
+.banniere p {
+  margin: 0;
+  font-size: 18px;
+  color: #CFE0FF;
+}
+
+
+/* ---------- Contenu ------------------------------------------------------ */
+main {
+  max-width: 1040px;
+  margin: 0 auto;
+  padding: 10px 24px 40px;
+}
+
+section { margin-top: 34px; }
+
+.titre-section {
+  margin: 0 0 18px 0;
+  padding: 10px 16px;
+  font-size: 24px;
+  color: #14206B;
+  background-color: #E3E8FF;
+  border-left: 6px solid #2563EB;
+  border-radius: 6px;
+}
+
+
+/* ---------- Cartes des ateliers ----------------------------------------- */
+.atelier {
+  overflow: hidden;
+  background-color: white;
+  border: 1px solid #DCE3FB;
+  border-radius: 16px;
+  box-shadow: 0 6px 20px rgba(40, 60, 160, 0.10);
+}
+
+.atelier figure { margin: 0; }
+
+.atelier img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.atelier figcaption {
+  padding: 6px 14px;
+  font-size: 13px;
+  font-style: italic;
+  color: white;
+  background-color: #14206B;
+}
+
+.infos { padding: 14px 18px 18px; }
+
+.infos h3 {
+  margin: 0 0 6px 0;
+  font-size: 21px;
+  color: #14206B;
+}
+
+.infos p {
+  margin: 0 0 12px 0;
+  line-height: 1.45;
+}
+
+.vedette .infos h3 { font-size: 26px; }
+
+.niveau {
+  padding: 4px 12px;
+  border-radius: 12px;
+  font-size: 13px;
+  font-weight: 700;
+  color: #2563EB;
+  background-color: #EAF1FF;
+}
+
+
+/* ---------- Médias ------------------------------------------------------- */
+.media {
+  padding: 18px;
+  background-color: white;
+  border: 1px solid #DCE3FB;
+  border-radius: 16px;
+  box-shadow: 0 6px 20px rgba(40, 60, 160, 0.10);
+}
+
+.media h3 {
+  margin: 0 0 12px 0;
+  color: #14206B;
+}
+
+.media p { margin: 0 0 14px 0; }
+
+video {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  background-color: #101B5E;
+}
+
+audio { width: 100%; }
+
+.plan { text-align: center; }
+
+
+/* ---------- Pied de page ------------------------------------------------- */
+.pied {
+  margin-top: 40px;
+  padding: 22px 40px 12px;
+  color: #B8C7FF;
+  background-color: #101B5E;
+}
+
+.pied-haut {
+  padding-bottom: 16px;
+  border-bottom: 1px solid #3A55B8;
+}
+
+.marque p { margin: 0; }
+
+.marque strong {
+  display: block;
+  font-size: 18px;
+  color: white;
+}
+
+.marque span {
+  font-size: 13px;
+  font-style: italic;
+}
+
+.liens-pied {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.liens-pied a {
+  color: #B8C7FF;
+  text-decoration: none;
+}
+
+.liens-pied a:hover { color: white; }
+
+.contact { margin: 0; }
+
+.copyright {
+  margin: 10px 0 0 0;
+  text-align: center;
+  font-size: 13px;
+}

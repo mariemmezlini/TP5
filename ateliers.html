@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ateliers – Club Informatique</title>
+  <!-- Étape 1.a : insérer ici le favicon -->
+       <link rel="icon" type="image/png" href="images/favicon.png">
+  <!-- Fichier fourni (couleurs, polices, marges) : à lier EN PREMIER -->
+  <link rel="stylesheet" type="text/css" href="css/base.css">
+  <!-- Votre feuille de style (à créer) : fonds, Flexbox, Grid et tableau -->
+  <link rel="stylesheet" type="text/css" href="mise_en_page.css">
+</head>
+<body id="haut">
+
+  <!-- ===== EN-TÊTE ===== -->
+  <header class="entete">
+    <!-- Étape 1.b : insérer ici le logo cliquable -->
+     <a href="#haut" title="Revenir en haut de la page"><img src="images/logo.svg" alt="Logo du Club Informatique" width="90"></a>
+    <div class="titre-bloc">
+      <h1>Club <span>Informatique</span></h1>
+      <p class="devise">Apprendre · Partager · Innover</p>
+    </div>
+    <nav>
+      <ul class="menu">
+        <li><a href="#ateliers">Ateliers</a></li>
+        <li><a href="#planning">Planning</a></li>
+        <li><a href="#medias">Médias</a></li>
+        <li><a class="bouton" href="../TP4/inscription.html">S’inscrire</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ===== BANNIÈRE ===== -->
+  <section class="banniere">
+    <h2>Six ateliers pour apprendre en s’amusant</h2>
+    <p>Du lundi au samedi, rejoignez-nous dans le bâtiment B.</p>
+  </section>
+
+  <main>
+
+    <!-- ===== ATELIERS ===== -->
+    <section id="ateliers">
+      <h2 class="titre-section">Nos ateliers</h2>
+      <div class="grille-ateliers">
+
+        <article class="atelier vedette">
+          <figure>
+            <!-- Étape 1.c : insérer ici l’image de l’atelier -->
+        
+             <img src="images/ateliers/python.jpg" alt="llustaration de lateleir python width=300 height=200>
+            <figcaption>Atelier vedette du semestre</figcaption>
+          </figure>
+          <div class="infos">
+            <h3>Python</h3>
+            <p>Écrire ses premiers programmes, manipuler des listes et créer un petit jeu en mode texte.</p>
+            <p class="niveau">Débutant</p>
+          </div>
+        </article>
+
+        <article class="atelier">
+          <figure>
+            <img src="images/ateliers/web.jpg" alt="Illustration de l’atelier Web" width="300" height="200">
+            <figcaption>Atelier Web</figcaption>
+          </figure>
+          <div class="infos">
+            <h3>Web</h3>
+            <p>Créer et publier son premier site avec HTML et CSS.</p>
+            <p class="niveau">Débutant</p>
+          </div>
+        </article>
+
+        <article class="atelier">
+          <figure>
+            <img src="images/ateliers/jeux.jpg" alt="Illustration de l’atelier Jeux vidéo" width="300" height="200">
+            <figcaption>Atelier jeux vidéo</figcaption>
+          </figure>
+          <div class="infos">
+            <h3>Jeux vidéo</h3>
+            <p>Concevoir un jeu en 2D : personnages, niveaux et score.</p>
+            <p class="niveau">Intermédiaire</p>
+          </div>
+        </article>
+
+        <article class="atelier">
+          <figure>
+            <img src="images/ateliers/robotique.jpg" alt="Illustration de l’atelier Robotique" width="300" height="200">
+            <figcaption>Atelier robotique</figcaption>
+          </figure>
+          <div class="infos">
+            <h3>Robotique</h3>
+            <p>Programmer des capteurs et faire avancer un petit robot.</p>
+            <p class="niveau">Intermédiaire</p>
+          </div>
+        </article>
+
+        <article class="atelier">
+          <figure>
+            <img src="images/ateliers/cyber.jpg" alt="Illustration de l’atelier Cybersécurité" width="300" height="200">
+            <figcaption>Atelier cybersécurité</figcaption>
+          </figure>
+          <div class="infos">
+            <h3>Cybersécurité</h3>
+            <p>Protéger ses comptes et comprendre les attaques courantes.</p>
+            <p class="niveau">Avancé</p>
+          </div>
+        </article>
+
+        <article class="atelier">
+          <figure>
+            <img src="images/ateliers/ia.jpg" alt="Illustration de l’atelier Intelligence artificielle" width="300" height="200">
+            <figcaption>Atelier intelligence artificielle</figcaption>
+          </figure>
+          <div class="infos">
+            <h3>Intelligence artificielle</h3>
+            <p>Entraîner un premier modèle qui reconnaît des images.</p>
+            <p class="niveau">Avancé</p>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ===== PLANNING ===== -->
+    <section id="planning">
+      <h2 class="titre-section">Planning de la semaine</h2>
+      <table class="planning">
+        <caption>Semestre 2 – toutes les salles se trouvent dans le bâtiment B.</caption>
+        <thead>
+          <tr><th>Atelier</th><th>Jour</th><th>Horaire</th><th>Salle</th><th>Places</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Python</td><td>Lundi</td><td>14h – 16h</td><td>B12</td><td>20</td></tr>
+          <tr><td>Web</td><td>Mardi</td><td>10h – 12h</td><td>Labo 3</td><td>18</td></tr>
+          <tr><td>Jeux vidéo</td><td>Mercredi</td><td>14h – 17h</td><td>B12</td><td>15</td></tr>
+          <tr><td>Robotique</td><td>Jeudi</td><td>9h – 12h</td><td>Atelier R</td><td>12</td></tr>
+          <tr><td>Cybersécurité</td><td>Vendredi</td><td>14h – 16h</td><td>Labo 3</td><td>16</td></tr>
+          <tr><td>Intelligence artificielle</td><td>Samedi</td><td>9h – 11h</td><td>B12</td><td>20</td></tr>
+        </tbody>
+        <tfoot>
+          <tr><td colspan="4">Total des places</td><td>101</td></tr>
+        </tfoot>
+      </table>
+    </section>
+
+    <!-- ===== MÉDIAS ===== -->
+    <section id="medias">
+      <h2 class="titre-section">Médias du club</h2>
+      <div class="grille-medias">
+
+        <article class="media video">
+          <h3>Vidéo de présentation</h3>
+          <!-- Étape 2.a : insérer ici le lecteur vidéo -->
+           <video width="640" height="360" poster=medias/poster.jpg><source src="medias/presentation.mp4" type="video/mp4"></video>
+        </article>
+
+        <article class="media audio">
+          <h3>Podcast – épisode 1</h3>
+          <p>Trente-cinq secondes pour découvrir l’atelier Python.</p>
+          <!-- Étape 2.b : insérer ici le lecteur audio -->
+           <audio ><source src="medias/podcast.mp3" type="audio/mpeg">
+           <source src="medias/podcast.wav" type="audio/wav"></audio>
+        </article>
+
+        <article class="media plan">
+          <h3>Plan des salles</h3>
+          <p>Cliquez sur une salle pour voir le planning, ou sur l’accueil pour vous inscrire.</p>
+          <!-- Étape 1.d : insérer ici l’image du plan, reliée à la carte « salles » -->
+           <img src="images/plan-salles.png" alt="Plan des salles du bâtiment B" width="600" height="360" href="#salle">
+      
+
+          <map name="salles">
+            <!-- Étape 1.d : ajouter ici les zones « Salle B12 » (rectangle) et « Accueil » (cercle) -->
+            <area shape="rect" coords="240,40,420,200" href="#planning" alt="Labo 3">
+            <area shape="rect" coords="440,40,580,200" href="#planning" alt="Atelier R">
+             <area shape="rect" coords="20,40,220,200" href="#planning" alt="salleB12">
+            <area shape="circle" coords="300,318,30" href="" alt="Accueil:s inscrire au club">
+          </map>
+        </article>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== PIED DE PAGE ===== -->
+  <footer class="pied">
+    <div class="pied-haut">
+      <div class="marque">
+        <img src="images/logo.svg" alt="" width="64">
+        <p><strong>Club Informatique</strong><span>Ensemble vers le numérique</span></p>
+      </div>
+      <ul class="liens-pied">
+        <li><a href="#ateliers">Ateliers</a></li>
+        <li><a href="#planning">Planning</a></li>
+        <li><a href="#medias">Médias</a></li>
+      </ul>
+      <p class="contact">club@exemple.com</p>
+    </div>
+    <p class="copyright">&copy; 2026 Club Informatique - Tous droits réservés</p>
+  </footer>
+
+</body>
+</html>
